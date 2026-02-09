@@ -42,20 +42,39 @@ demographic and clinical cohorts in order to prioritize preventive interventions
 
 ---
 
-## Dashboard
-The Looker Studio dashboard provides:
-- Executive-level risk overview
-- Interactive cohort filtering
-- Distribution and trend analysis
+## Dashboard (Looker Studio)
 
-> Screenshots are included in `/dashboards`.
+An interactive Looker Studio dashboard was built to enable:
+- Executive-level KPI monitoring
+- Cohort-based risk comparison (age, BMI, cholesterol, glucose)
+- Behavioral factor analysis (smoking, alcohol intake, physical activity)
+- Distribution-level exploration of clinical indicators
+
+🔗 **Live Dashboard (view-only):**  
+https://lookerstudio.google.com/s/nwkJduZwe0I
+
+### Dashboard Preview
+![Overview KPIs](dashboards/overview_kpis.png)
+![Risk Distributions](dashboards/risk_distributions.png)
 
 ---
 
-## Key Insights
-- Cardiovascular risk increases sharply beyond specific age thresholds
-- Certain demographic cohorts exhibit consistently higher risk rates
-- Risk distribution varies significantly across clinical indicators
+## Results & Key Findings
+
+### Dataset Summary
+- **Total cleaned records:** 68,714
+- **Prevalence of cardiovascular disease:** 49.50%
+- **Average age:** 53.29 years
+- **Average BMI:** 27.5
+- **Average systolic blood pressure:** 126.6 mmHg
+
+### Risk & Cohort Insights
+- Cardiovascular disease prevalence increases with **higher cholesterol and glucose levels**, with a visibly higher proportion of affected individuals in the “Above Normal” and “Well Above Normal” categories.
+- **BMI distribution** is skewed toward the overweight range (25–29.9), indicating elevated population-level risk even among non-obese cohorts.
+- Patients with cardiovascular disease show **lower physical activity rates** compared to non-disease cohorts, while smoking and alcohol usage patterns differ modestly.
+- **Average systolic blood pressure increases with age**, peaking in older age groups (50+), reinforcing age as a primary risk stratifier.
+
+These findings support the use of cohort-based risk segmentation rather than single-metric thresholds for cardiovascular risk assessment.
 
 ---
 
